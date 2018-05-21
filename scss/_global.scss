@@ -1,15 +1,5 @@
-// Global styling for this template
-
 body {
   @include body-font;
-  padding-top: 54px;
-  color: $gray-600;
-}
-@media (min-width: 992px) {
-  body {
-    padding-top: 0;
-    padding-left: $sidebar-base-width;
-  }
 }
 
 h1,
@@ -19,44 +9,20 @@ h4,
 h5,
 h6 {
   @include heading-font;
+}
+
+.btn-xl {
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  font-size: 0.9rem;
   font-weight: 700;
-  text-transform: uppercase;
-  color: $gray-800;
+  letter-spacing: 0.1rem;
 }
 
-h1 {
-  font-size: 6rem;
-  line-height: 5.5rem;
+.bg-black {
+  background-color: $black !important;
 }
 
-h2 {
-  font-size: 3.5rem;
-}
-
-.subheading {
-  text-transform: uppercase;
-  font-weight: 500;
-  @include heading-font;
-  font-size: 1.35rem;
-}
-
-.list-social-icons {
-  a {
-    color: $gray-700;
-    &:hover {
-      color: $primary;
-    }
-    .fa-lg {
-      font-size: 1.75rem;
-    }
-  }
-}
-
-.list-icons {
-  font-size: 3rem;
-  .list-inline-item i {
-    &:hover {
-      color: $primary;
-    }
-  }
+.rounded-pill {
+  border-radius: 5rem;
 }
